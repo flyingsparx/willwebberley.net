@@ -36,7 +36,3 @@ The code includes the blog, routing and page requesting functionality.
 * */includes/api/blog.php*
     * Responsible for loading the requested post (or page of posts) and returning via JSON.
     * Uses a directory (/pages/posts) to hold blog posts (so does not need a database - though could easily be modified to work with one).
-    
-
-
-An example usage is [here](http://www.willwebberley.net/downloads/node-fts/#welcome).
