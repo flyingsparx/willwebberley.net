@@ -1,0 +1,734 @@
+/*
+*
+* copyright Will Webberley 2012.
+*
+*
+* The following files are attributed to subtlepatterns.com:
+* light_wool.png
+* darkdenim3.png
+*
+*/
+
+/*
+* MAIN LAYOUT
+*/
+
+html, body{
+	height:100%;
+	width:100%;
+	margin:0px;
+}
+
+body{
+	background:url('http://willwebberley.net/media/light_wool.png');
+}
+
+*{
+	margin: 0px;
+}
+
+header{
+	z-index:20;
+	position:fixed;
+	top:0px;
+	width:100%;
+	min-width:900px;
+	height:40px;
+	border-bottom:#00BFFF 1px solid;
+	padding-top:15px;
+	background:url('http://willwebberley.net/media/darkdenim3.png');
+	box-shadow: inset 0px -3px 10px black;
+}
+
+#main-stuff{
+	z-index:1;
+	/*width:900px;
+	*/
+	width:95%;
+	min-width:300px;
+	margin:90px auto;
+	padding-bottom:50px;
+	position:relative;
+}
+
+#content{
+	z-index:2;
+	width:80%;
+	min-width:300px;
+	position:relative;
+	margin:0px auto;
+}
+
+footer{
+	z-index:20;
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	height:5px;
+	box-shadow:0px -2px 8px gray;
+	background:url('http://willwebberley.net/media/darkdenim3.png');
+	/*border-top:#00BFFF 1px solid;
+	padding:2px;
+	background:#00BFFF;*/
+}
+
+#browser-error{
+	z-index:1;
+	width:900px;
+	margin:90px auto;
+	padding:10px;
+	border:1px solid red;
+	
+}
+#browser-error .subject{
+	font-size:18px;
+	padding-bottom:10px;
+	color:red;
+	font-family:'Helvetica', 'Sans Serif';
+}
+#browser-error .text{
+	font-size:12px;
+	padding-bottom:5px;
+	color:red;
+	font-family:'Helvetica', 'Sans Serif';
+}
+
+/*
+* TOP-STUFF STUFF
+*/
+
+nav{
+	position:relative;
+	float:left;
+	width:100%;
+}
+
+nav .arrow .line{
+	position:absolute;
+	top:-15px;
+	left:0px;
+	width:1005px;
+	height:2px;
+	background:#00BFFF;
+}
+
+nav .arrow .head{
+	position:absolute;
+	left:1000px;
+	top:-15px;
+	width:25px;
+	height:20px;
+	background:url('http://willwebberley.net/media/arrow.png');
+	background-size:25px 20px;
+	background-repeat:no-repeat;
+}
+
+nav #home{
+	font-size:20px;
+	top:-5px;
+	font-family: 'Molle';
+	font-style: italic;
+	src: local('Molle'), local('Molle-Regular'), 			url(http://themes.googleusercontent.com/static/fonts/molle/v1/HHfcBrrACvBy6Ylr8SOSEQLUuEpTyoUstqEm5AMlJo4.woff) format('woff'); 
+	font-weight: lighter; 
+	display:inline-block;
+	text-shadow:1px 1px 2px black;
+	margin-right:20px;
+	margin-left:20px;
+	margin-top:10px
+	position:relative;
+	float:left;
+}	
+
+nav a{
+	position:relative;
+	display:inline-block;
+	list-style-type: none;
+	font-family: 'Helvetica Neue', 'Helvetica', cursive;
+	font-size:14px;
+	margin: 0px 4px;
+	padding: 6px 9px;
+	border-radius:8px 8px 8px 8px;
+	text-shadow:1px 1px 2px black;
+}
+nav a:hover{color:gray; text-decoration:none;}
+nav a:link{color:white; text-decoration:none;}
+nav a:visited{color:white; text-decoration:none;}
+
+.banner{
+	position:absolute;
+	width:30px;
+	top:-24px;
+	border-radius: 8px;
+	box-shadow: 4px 4px 10px 0 #222;
+	z-index:10;
+}
+
+.twitter-banner{
+	right:235px;
+}
+
+.google-banner{
+	right:190px;
+}
+
+.lastfm-banner{
+	right:145px;
+}
+
+.github-banner{
+	right:100px;
+}
+
+.foursquare-banner{
+	right:55px;
+}
+
+.facebook-banner{
+	right:10px;
+}
+
+#loading{
+	width:25%;
+	position:relative;
+	margin:50px auto;
+}
+#loading img{
+	width:100%;
+}
+
+/*
+* BOTTOM-STUFF STUFF
+*/
+
+footer .name{
+	position:relative;
+	bottom:2px;
+	left:3px;
+	font-size:16px;
+	font-family: 'Quantico', sans-serif;
+	font-weight:lighter;
+	color:#00BFFF;
+}
+
+/*
+* GENERAL STYLES
+*/
+
+h1{
+	color:#00BFFF;
+	font-size:35px;
+	font-family: 'Quantico', sans-serif;
+	font-weight:lighter;
+	margin-bottom:20px;
+}
+
+h2{
+	
+	color:#00BFFF;
+	
+	font-size:22px;
+	font-family: 'Quantico', sans-serif;
+	font-weight:lighter;
+	margin-top:25px;
+	margin-bottom:15px;
+}
+
+h3{
+	color:#222;
+	
+	
+	font-size:16px;
+	font-family: 'Quantico', sans-serif;
+	font-weight:lighter;
+	margin-bottom:15px;
+}
+
+p{
+	color:#222;
+	font-size:14px;
+	font-family:'Helvetica Neue', 'Helvetica', 'Sans-serif';
+	font-weight: 300;
+	margin-bottom:12px;
+}
+p a:link{color:gray; text-decoration:underline;}
+p a:visited{color:gray; text-decoration:underline;}
+p a:hover{color:#00BFFF; text-decoration:underline;}
+
+p strong{
+	font-family:'Helvetica Neue', 'Helvetica', 'Sans-serif';
+	color:black;
+}
+
+label{
+	display:inline-block;
+	width:115px;
+	padding-right:15px;
+	color:#aaa;
+	float:left;
+	position:relative;
+}
+
+label.small{
+	width:70px;
+}
+
+input{
+	width:200px;
+	border:gray 1px solid;
+	font-size:12px;
+	height:16px;
+	padding:2px;
+	background:rgba(250,250,250,0.2);
+	border-radius:3px;
+	font-family: 'Quantico', sans-serif;
+}
+
+textarea{
+	width:200px;
+	max-width:200px;
+	height:100px;
+	border:gray 1px solid;
+	font-size:12px;
+	padding:2px;
+	background:rgba(250,250,250,0.2);
+	border-radius:3px;
+	font-family: 'Quantico', sans-serif;
+}
+
+input:focus, textarea:focus{
+	border:#00BFFF 1px solid;
+	outline:#00BFFF 0px solid;
+}
+
+hr{
+	margin-top:20px;
+	margin-bottom:30px;
+	color:#BBB;
+	background-color:#BBB;
+}
+
+img{
+	border-style:none;
+}
+
+button{
+	display:inline-block;
+	font-size:12px;
+	font-family: 'Quantico', sans-serif;
+	background:white;
+	color:#222222;
+	opacity:0.7;
+	border:#ccc 2px solid;
+	padding:6px;
+	border-radius:4px;
+	text-align:center;
+}
+button:hover{text-decoration:none; border:#67C8FF 2px solid;}
+
+
+/*
+* CLASS STYLES
+*/
+
+.download{
+	padding-left:25px;
+	background:url('http://willwebberley.net/media/download.png') no-repeat;
+	background-size:20px 20px;
+	line-height:20px;
+}
+
+.email{
+	padding-left:30px;
+	background:url('http://willwebberley.net/media/email.png') no-repeat;
+	background-size:auto 15px;
+	line-height:15px;
+}
+
+.column{
+	/*width:430px;*/
+	width:45%;
+	min-width:200px;
+	margin:0px 10px;
+	position:relative;
+	float:left;
+}
+.large-column{
+	width:630px;
+	margin:0px 10px;
+	position:relative;
+	float:left;
+}
+.small-column{
+	width:230px;
+	margin:0px 10px;
+	position:relative;
+	float:left;
+}
+
+.success{
+	color:green;
+}
+
+.error{
+	color:red;
+}
+
+.clear{
+	clear:both;
+}
+
+.hidden{
+	display:none;
+}
+
+.small-image{
+	position:relative;
+	width:350px;
+	float:left;
+	margin:7px 10px;
+	border-radius:4px;
+}
+
+.large-image{
+	width:770px;
+	margin:15px 0px;
+}
+
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
+
+/*
+* CONTACT PAGE
+*/
+
+.send-button{
+	padding-left:30px;
+	background:url('http://willwebberley.net/media/send.png');
+	background-size:25px 25px;
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+.edit-label{
+	padding-left:25px;
+	background:url('http://willwebberley.net/media/write.png');
+	background-size:20px 20px;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+.email-label{
+	padding-left:25px;
+	background:url('http://willwebberley.net/media/email.png');
+	background-size:20px 20px;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+
+/*
+* NEWS PANEL
+*/
+
+#news{
+	position:relative;
+	top:30px;
+	margin:50px auto;
+	width:900px;
+	clear:both;
+	height:400px;
+	font-family:'Helvetica Neue', 'Helvetica', 'Sans Serif';
+	z-index:5;
+	
+}
+
+#news .feed{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:700px;
+	height:320px;
+	opacity:0.0;
+	padding:10px;
+	background:rgba(0,0,0,0.07);
+	border-radius:10px;
+}
+
+#news .feed h2{
+	margin-top:0px;
+}
+
+#news .feed load-text{
+	margin-top:30px;
+	clear:both;
+}
+
+#news .feedlink{
+	display:block;
+	width:172px;
+	position:relative;
+	float:left;
+	clear:both;
+	margin-top:15px;
+	opacity:0.5;
+	z-index:8;
+	padding:4px;
+	border-radius:5px 0px 0px 5px;
+}
+#news #twitterlink a:link{color:#00BFFF; text-decoration:none;}
+#news #twitterlink a:visited{color:#00BFFF; text-decoration:none;}
+#news #twitterlink a:hover{color:#00BFFF; text-decoration:none;}
+
+#news #lastfmlink a:link{color:red; text-decoration:none;}
+#news #lastfmlink a:visited{color:red; text-decoration:none;}
+#news #lastfmlink a:hover{color:red; text-decoration:none;}
+
+#news #photolink a:link{color:gray; text-decoration:none;}
+#news #photolink a:visited{color:gray; text-decoration:none;}
+#news #photolink a:hover{color:gray; text-decoration:none;}
+
+#news .feedlink img{
+	width:25px;
+	border-radius:4px;
+	vertical-align:middle;
+}
+
+#news .feed ul{
+	margin:0px;
+	padding:0px;
+	display:block;
+	overflow:hidden;
+	width:700px;
+	clear:both;
+	float:right;
+}
+
+#news .feed ul .item{
+	display:block;
+	position:relative;
+	float:left;
+	margin:10px;
+	padding:5px;
+	height:100px;
+	max-width:200px;
+	list-style:none;
+	font-size:14px;
+	background:rgba(0,0,0,0.8);
+	color: white;
+	box-shadow:0px 0px 5px gray;
+}
+#news ul .item a:link{color:#00BFFF; text-decoration:none;}
+#news ul .item a:visited{color:#00BFFF; text-decoration:none;}
+#news ul .item a:hover{color:#00BFFF; text-decoration:underline;}
+
+#news .feed ul .item .time{
+	display:block;
+	position:absolute;
+	/*margin-top:10px;*/
+	right:3px;
+	bottom:3px;
+	font-size:12px;
+	color:gray;
+}
+
+/*
+* CODE SNIPPETS
+*/
+
+.code{
+	color:#222;
+	font-size:14px;
+	font-family:'Courier', 'MonoSpace';
+}
+
+.code-block{
+	background:#222;
+	font-family:'Courier', 'MonoSpace';
+	font-size:12px;
+	color:white;
+	line-height:120%;
+	padding:15px;
+	margin:15px;
+	width:800px;
+}
+
+/*
+* CV PAGE STYLES
+*/
+.print-head{
+	display:none;
+}
+
+.print-button{
+	padding-left:30px;
+	background:url('http://willwebberley.net/media/print.png');
+	background-size:25px 25px;
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+.mailto-button{
+	padding-left:30px;
+	background:url('http://willwebberley.net/media/mailto.png');
+	background-size:25px 25px;
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+	
+/*
+* BLOG STYLES
+*/
+#profile{
+	width:20%;
+	min-width:100px;
+	position:relative;
+	float:right;
+}	
+
+#profile img{
+	float:left;
+	width:100%;
+	margin-bottom:10px;
+}
+
+#profile #info{
+	position:fixed;
+}
+
+#profile #info #prev-post{
+	background:url('http://willwebberley.net/media/prev-post.png');
+	padding-left:30px;
+	width:70px;
+	background-size:25px 25px;
+	background-repeat:no-repeat;
+	background-position:left;
+	float:left;
+	margin-bottom:10px;
+	margin-right:15px;
+}
+#profile #info #next-post{
+	background:url('http://willwebberley.net/media/next-post.png');
+	padding-left:30px;
+	width:70px;
+	background-size:25px 25px;
+	background-repeat:no-repeat;
+	background-position:left;
+	float:left;
+	clear:left;
+}
+#profile #info #scroll-top{
+	background:url('http://willwebberley.net/media/scroll-up.png');
+	padding-right:30px;
+	width:70px;
+	background-size:25px 25px;
+	background-repeat:no-repeat;
+	background-position:right;
+	float:left;
+	opacity:0.0;
+}
+
+.prev-page{
+	background:url('http://willwebberley.net/media/prev-page.png');
+	padding-left:30px;
+	width:100px;
+	background-size:25px 25px;
+	background-repeat:no-repeat;
+	background-position:left;
+	float:left;
+	opacity:0.0;
+}
+
+.next-page{
+	background:url('http://willwebberley.net/media/next-page.png');
+	padding-right:30px;
+	width:100px;
+	background-size:25px 25px;
+	background-repeat:no-repeat;
+	background-position:right;
+	float:right;
+	opacity:0.0;
+}
+
+#blog{
+	width:78%;
+	min-width:400px;
+	min-height:500px;
+	padding-right:10px;
+	/*border-right:1px solid #BBB;*/
+	position:relative;
+	float:left;
+}
+
+article{
+	width:95%;
+	margin-bottom:40px;
+	/*border-bottom:1px solid #BBB;*/
+	padding:10px;
+	background:rgba(0,0,0,0.05);
+	border-radius:4px;
+	box-shadow:0px 0px 5px gray;
+}
+
+article .content{
+	clear:both;
+}
+
+article .blog-image{
+	max-width:300px;
+	max-height:400px;
+	clear:left;
+	float:left;
+	margin-top:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+	cursor:pointer;
+}
+
+article .title{
+	color:#00BFFF;
+	font-size:22px;
+	line-height:25px;
+	font-family: 'Quantico', sans-serif;
+	font-weight:lighter;
+	margin-bottom:15px;
+	display:inline-block;
+	float:left;
+	width:100%;
+	padding-left:30px;
+	background:url('http://willwebberley.net/media/title.png');
+	background-size:25px 25px;
+	background-repeat:no-repeat;
+}
+article .title a:link{color:#00BFFF; text-decoration:none;}
+article .title a:visited{color:#00BFFF; text-decoration:none;}
+article .title a:hover{color:#00BFFF; text-decoration:underline;}
+
+article .date{
+	color:#222;
+	font-size:14px;
+	line-height:20px;
+	font-family: 'Quantico', sans-serif;
+	font-weight:lighter;
+	margin-bottom:15px;
+	display:inline-block;
+	float:right;
+	width:100%;
+	text-align:right;
+	padding-right:25px;
+	background:url('http://willwebberley.net/media/date.png');
+	background-size:20px 20px;
+	background-position:right top;
+	background-repeat:no-repeat;
+}
+
+article .content{
+	margin-top:10px;
+}

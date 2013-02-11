@@ -1,0 +1,21 @@
+<script type="text/javascript">
+
+// This page loads when a requested resource cannot be found. The script redirects to the
+// main site with the request appended. The router will then attempt to find the 
+// requested file.
+// This is useful, as people can go to, for example, 
+// willwebberley.net/contact, instead of willwebberley.net/#contact
+// and the link will still work.
+var pathArray = window.location.pathname.split("/");
+var requested = "";
+for (var i = 1; i < pathArray.length; i++ ) {
+	if(i > 1){
+		requested += "/";
+	}
+	requested += pathArray[i];
+}
+window.location = "http://www.willwebberley.net/#"+requested;
+</script>
+<!-- 
+                                                                                                                                                                                                                                                                                                                                                                                                                            
+--> 

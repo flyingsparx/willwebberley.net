@@ -1,0 +1,106 @@
+header{
+	position:relative;
+	width:100%;
+}
+
+footer{
+	display:none;
+}
+
+h1{
+	margin-bottom:30px;
+}
+
+h2{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+h3{
+	margin:top:10px;
+	margin-bottom:15px;
+}
+
+p{
+	color:gray;
+}
+
+#main-stuff{
+	width:100%;
+	padding:0px 5px;
+	margin:10px auto;
+}
+
+
+.column{
+	width:90%;
+	margin:0px auto;
+	padding:0px 10px;
+}
+
+
+.small-image{
+	position:relative;
+	width:350px;
+	margin:10px auto;
+	border-radius:4px;
+	display:block;
+}
+
+.large-image{
+	width:450px;
+	margin:15px auto;
+	display:block;
+}
+
+.right{
+	clear:both;
+}
+
+.left{
+	clear:both;
+}
+
+#blog{
+	width:100%;
+	padding:0px 10px;
+	margin:0px auto;
+	border:none;
+}
+
+#profile{
+	width:90%;
+	padding:0px 10px;
+	margin:20px auto;
+	position:relative;
+	float:left;
+	right:0px;
+	left:0px;
+}
+#profile img{
+	width:40%;
+	float:left;
+	margin-right:15px;
+	margin-bottom:10px;
+}
+#profile #info{
+	position:relative;
+}
+
+article{
+	border-bottom:1px solid gray;
+}
+
+
+
+#prev-post{
+	display:none;
+}
+
+#next-post{
+	display:none;
+}
+
+#profile hr{
+	display:none;
+}
